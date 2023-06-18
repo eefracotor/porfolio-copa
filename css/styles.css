@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap%27');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,900&display=swap');
 /* En este archivo escriban su CSS */
 
 /* Fonts */
@@ -16,7 +16,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poiret One", sans-serif;
+    font-family: "Roboto", sans-serif;
     /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
 }
@@ -93,7 +93,7 @@ footer p {
     margin: auto;
     font-size: 18px;
     color: #ececec;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .nav-bar {
@@ -175,7 +175,7 @@ footer p {
     text-align: center;
     line-height: 50px;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 400;
     color: #fbfbff;
 }
 
