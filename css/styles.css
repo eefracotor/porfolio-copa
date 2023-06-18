@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap%27');
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poiret One", sans-serif;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ececec;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 15px;
+    line-height: 1.2;
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    margin-top: 50px;
+    background-color: rgb(17,106,123);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: auto;
+    font-size: 18px;
+    color: #ececec;
+    font-weight: 600;
+}
+
+.nav-bar {
+    background-color: #ececec;
+    width: 100%;
+    height: 90px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(17, 106, 123,0.75);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(17, 106, 123,0.75);
+    box-shadow: 0px 5px 15px 0px rgba(17, 106, 123,0.75);
+}
+
+.img-logo {
+    width: 75px;
+    margin-left: 25px;
+}
+
+.container-btn-nav {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 25px;
+}
+
+.btn-nav {
+    width: 80px;
+    height: 5vh;
+    color: #000;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.30s;
+}
+
+.btn-nav:active {
+    border-radius: 10px;
+    -webkit-box-shadow:  5px 5px 10px 0px rgba(17, 106, 123,0.75);
+    -moz-box-shadow:  5px 5px 10px 0px rgba(17,106,123,0.75);
+    box-shadow: inset 5px 5px 10px 0px rgba(17,106,123,0.75);
+}
+
+#inicio {
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: #ececec;
+    /* margin-top: 15vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+    width: 400px;
+    border-radius: 50%;
+    border: 1px solid rgb(17, 106, 123);
+    overflow: hidden;
+}
+
+.btn-download{
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(17,106,123);
+    border-radius: 15px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fbfbff;
+}
+
+.resume-container{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hablemos {
+    width: 100%;
+    margin: auto;
+    background-color: #ececec;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-contato {
+    width: 95%;
+    background-color: rgb(205, 194, 174);
+    min-height: 50vh;
+    border-radius: 15px;
+    border: 1px solid rgb(17, 106, 123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10vh auto 50px;
+}
+
+.img-icon {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.img-letstalk {
+    width: 70px;
+    height: 70px;
+}
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
