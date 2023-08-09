@@ -5,6 +5,7 @@ moreInfo.addEventListener('click', mostrarInfo);
 
 function mostrarInfo() {
     projetosList.classList.toggle('projetosVisible');
+    moreInfo.textContent == 'Saiba mais' ? moreInfo.textContent = 'Fechar' : moreInfo.textContent = 'Saiba mais'
 }
 
 
