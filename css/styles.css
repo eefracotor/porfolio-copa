@@ -13,6 +13,10 @@ body {
     background-color: #ececec;
 }
 
+img {
+    width: 100%;
+}
+
 ul {
     list-style: none;
 }
