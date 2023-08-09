@@ -36,7 +36,14 @@ function creatCardRepos (titulo, descripcion, url_repos, url_demo, topics) {
    let titulo_repos = document.createElement('h3');
    titulo_repos.textContent = titulo;
    let descripcion_repos = document.createElement('p');
-   descripcion_repos.textContent = descripcion;
+   const LIMIT = 150;
+   for (let p of descripcion){
+    const aboveLimit = descripcion.length > LIMIT;
+    const dotOrEmpty = aboveLimit ? ' [...]' : '';
+    descripcion_repos.textContent = descripcion.substring(0, LIMIT) + dotOrEmpty
+   }
+//    descripcion_repos.textContent = p;
+//    descripcion_repos.textContent = descripcion;
 
    body_title.appendChild(titulo_repos);
    body_title.appendChild(descripcion_repos);

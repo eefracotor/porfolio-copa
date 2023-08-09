@@ -252,7 +252,7 @@ footer p {
 
 .img_card {
     width: 90%;
-    height: 175px;
+    height: 20vh;
     border-radius: 25px;
     margin: 0 auto;
     display: flex;
@@ -272,8 +272,8 @@ footer p {
 }
 
 .intern {
-    height: 12vh;
-    margin-bottom: 70px;
+    height: 15vh;
+    /* margin-bottom: 70px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,6 +289,10 @@ footer p {
 .intern p {
     text-align: center;
     font-weight: 400;
+    /* max-width: 250ch; */
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
 }
 
 .btn-block a {
