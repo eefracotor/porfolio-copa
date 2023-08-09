@@ -271,7 +271,7 @@ footer p {
 
 .img_card {
     width: 90%;
-    height: 20vh;
+    height: 30%;
     border-radius: 25px;
     margin: 0 auto;
     display: flex;
@@ -291,7 +291,7 @@ footer p {
 }
 
 .intern {
-    height: 15vh;
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
