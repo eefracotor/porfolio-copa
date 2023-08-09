@@ -13,10 +13,6 @@ body {
     background-color: #ececec;
 }
 
-/* img {
-    width: 100%;
-} */
-
 ul {
     list-style: none;
 }
@@ -134,7 +130,6 @@ footer p {
     min-height: 100vh;
     margin: auto;
     background-color: #ececec;
-    /* margin-top: 15vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,6 +160,15 @@ footer p {
     font-size: 20px;
     font-weight: 400;
     color: #fbfbff;
+    transition: all ease .5s;
+}
+
+.btn-download:hover {
+    background-color: #fbfbff;
+    color:  rgb(17,106,123);
+    -webkit-box-shadow:  5px 5px 10px 0px rgba(17, 106, 123,0.75);
+    -moz-box-shadow:  5px 5px 10px 0px rgba(17,106,123,0.75);
+    box-shadow: 5px 5px 10px 0px rgba(17,106,123,0.75);
 }
 
 .resume-container{
@@ -213,8 +217,14 @@ footer p {
 .img-letstalk {
     width: 70px;
     height: 70px;
+    transition: all ease .5s;
 }
 
+.img-letstalk:hover {
+    -webkit-box-shadow:  5px 5px 10px 0px rgba(17, 106, 123,0.75);
+    -moz-box-shadow:  5px 5px 10px 0px rgba(17,106,123,0.75);
+    box-shadow: 5px 5px 10px 0px rgba(17,106,123,0.75);
+}
 
 .btn-moreinfo {
     width: 200px;
@@ -224,7 +234,16 @@ footer p {
     color: #fbfbff;
     font-size: 1.25rem;
     font-weight: 400;
+    transition: all ease .5s;
+}
 
+.btn-moreinfo:hover {
+    cursor: pointer;
+    background-color: #fbfbff;
+    color: #000;
+    -webkit-box-shadow:  5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:  5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .projetos {
@@ -273,7 +292,6 @@ footer p {
 
 .intern {
     height: 15vh;
-    /* margin-bottom: 70px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,10 +307,6 @@ footer p {
 .intern p {
     text-align: center;
     font-weight: 400;
-    /* max-width: 250ch; */
-    /* overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; */
 }
 
 .btn-block a {
@@ -311,8 +325,17 @@ footer p {
     padding: 10px;
     text-transform: uppercase;
     width: 15%;
+    transition: all ease .5s;
 }
 
 .btn img {
     width: 100%;
+}
+
+.btn:hover {
+    border-radius: 50%;
+    -webkit-box-shadow:  5px 5px 10px 0px rgba(17, 106, 123,0.75);
+    -moz-box-shadow:  5px 5px 10px 0px rgba(17,106,123,0.75);
+    box-shadow: 5px 5px 10px 0px rgba(17,106,123,0.75);
+
 }
