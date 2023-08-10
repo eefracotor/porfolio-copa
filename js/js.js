@@ -1,13 +1,30 @@
 const moreInfo = document.getElementById("btn-moreInfo");
 const projetosList = document.getElementById("projetos");
+const btn_up = document.getElementById("btn-up")
 
 moreInfo.addEventListener('click', mostrarInfo);
 
 function mostrarInfo() {
     projetosList.classList.toggle('projetosVisible');
-    moreInfo.textContent == 'Saiba mais' ? moreInfo.textContent = 'Fechar' : moreInfo.textContent = 'Saiba mais'
+    moreInfo.textContent == 'Saiba mais' ? moreInfo.textContent = 'Fechar' : moreInfo.textContent = 'Saiba mais';
 }
 
+btn_up.addEventListener('click', () => {
+    window.scroll(0, 750)
+    mostrarInfo();
+})
+
+window.onscroll = () => {
+    add_btn_up();
+}
+
+const add_btn_up = () => {
+    if(window.scrollY > 1300) {
+        btn_up.classList.add("btn-up-on");
+    } else {
+        btn_up.classList.remove("btn-up-on");
+    }
+}
 
 // API GitHub
 let div_orden = document.querySelector("div #projetos");
@@ -100,6 +117,7 @@ function getApiGitHub () {
         div_orden.innerHTML = "";
         data.map(item => {
             div_orden.appendChild(creatCardRepos (item.name, item.description, item.html_url, item.homepage, item.topics));
+            div_orden.appendChild(btn_up)
         })
 
     })

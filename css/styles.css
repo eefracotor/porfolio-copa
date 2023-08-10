@@ -329,7 +329,8 @@ footer p {
 }
 
 .btn img {
-    width: 100%;
+    width: 100%;    
+    transition: .5s;
 }
 
 .btn:hover {
@@ -337,5 +338,50 @@ footer p {
     -webkit-box-shadow:  5px 5px 10px 0px rgba(17, 106, 123,0.75);
     -moz-box-shadow:  5px 5px 10px 0px rgba(17,106,123,0.75);
     box-shadow: 5px 5px 10px 0px rgba(17,106,123,0.75);
+}
 
+.btn img:hover {
+    filter: invert(50%);
+}
+
+.btn-up {
+    width: 50px;
+    height: 50px;
+    border: none;
+    /* border-radius: 100%; */
+    background-color: transparent;
+    /* background-color: rgba(17, 106, 123,0.75); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    /* transform: translateY(100px); */
+    transform: scale(0);
+    transition: .5s;
+}
+
+.btn-up img {
+    transition: .5s;
+    width: 80%;
+}
+
+.btn-up-on {
+    /* transform: translateY(0); */
+    transform: scale(1);
+}
+
+.btn-up-on:hover {
+    /* border: 1px solid #fbfbff85; */
+    border-radius: 50%;
+    -webkit-box-shadow:  5px 5px 10px 0px rgba(17, 106, 123,0.75);
+    -moz-box-shadow:  5px 5px 10px 0px rgba(17,106,123,0.75);
+    box-shadow: 5px 5px 10px 0px rgba(17,106,123,0.75);
+
+}
+
+.btn-up-on img:hover {
+    filter: invert(100%);
 }
