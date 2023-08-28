@@ -40,21 +40,26 @@ function creatCardRepos (titulo, descripcion, url_repos, url_demo, topics) {
 
     // function createImage() {
         for(let i = 0; topics.length > 3 ? i < 3 : i < topics.length ; i ++){
-             let elem = document.createElement("img");
-            elem.src = "img/" + topics[i] + ".png";
-            elem.alt = topics[i];
+            let elem = document.createElement("img");
+            if(topics[i] === 'github' || topics[i] === ''){
+                elem.src = "img/github-mark.svg";
+                elem.alt = 'github';
+            }else{
+                elem.src = "img/" + topics[i] + ".png";
+                elem.alt = topics[i];
+            }
             div_img.appendChild(elem);
         }
 
    // Cuerpo del titulo
-   let body_title = document.createElement('div');
-   body_title.classList.add("intern");
+    let body_title = document.createElement('div');
+    body_title.classList.add("intern");
 
-   let titulo_repos = document.createElement('h3');
-   titulo_repos.textContent = titulo;
-   let descripcion_repos = document.createElement('p');
-   const LIMIT = 150;
-   for (let p of descripcion){
+    let titulo_repos = document.createElement('h3');
+    titulo_repos.textContent = titulo;
+    let descripcion_repos = document.createElement('p');
+    const LIMIT = 150;
+    for (let p of descripcion){
     const aboveLimit = descripcion.length > LIMIT;
     const dotOrEmpty = aboveLimit ? ' [...]' : '';
     descripcion_repos.textContent = descripcion.substring(0, LIMIT) + dotOrEmpty
